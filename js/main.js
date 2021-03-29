@@ -135,6 +135,7 @@ function renderChart() {
     arr.push(obj[item]);
     areaPieChartArr.push(arr);
   })
+  areaPieChartArr = [areaPieChartArr[1], areaPieChartArr[2], areaPieChartArr[0]];
   const chart = c3.generate({
     bindto: ".pie-chart",
     data: {
