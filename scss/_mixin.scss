@@ -1,0 +1,16 @@
+@mixin absolute($top: 0, $left: 0, $bottom: null, $right: null) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+@mixin flex($justifyContent: null, $alignItems: null, $flexDirection: null) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+}
+@mixin cardWidth($marginRight, $cardNum) {
+  max-width: (100% - $marginRight * $cardNum) / $cardNum;
+}

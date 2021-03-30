@@ -1,0 +1,10 @@
+@mixin ipad {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin iphoneX {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
